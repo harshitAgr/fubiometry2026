@@ -11,7 +11,3 @@ derived clinical-parameter error.
 > **Status: release in preparation.** The final-test phase closes 15 August 2026.
 > The inference code, training recipes, and the offline container definition for the
 > deployed system will be published here after the phase closes.
-
-## Contact
-
-Harshit Agrawal — <harshit@aiatella.com> · AIATELLA Oy, Helsinki, Finland
