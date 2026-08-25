@@ -1,0 +1,183 @@
+{
+  "protocol": "OOF old-vs-continued-DINO Docker route; same route mode and post-processing; route_mode=hc_only",
+  "prediction_sources": {
+    "control": {
+      "base": "scratch_tmp/vitb_window9",
+      "hcsmall": "submission/hcsmall",
+      "hchead": "submission/hchead"
+    },
+    "treatment": {
+      "base": "submission/dino_ssl_vitb_5fold_window9",
+      "hcsmall": "submission/dino_ssl_vitb_hcsmall_5fold",
+      "hchead": "submission/dino_ssl_vitb_hchead_5fold"
+    }
+  },
+  "official_validation_used": false,
+  "folds": [
+    {
+      "fold": 0,
+      "postprocess_counts": {
+        "control": {
+          "hc_scaled": 3,
+          "projected": 300,
+          "ivc_calibrated": 1
+        },
+        "treatment": {
+          "hc_scaled": 3,
+          "projected": 300,
+          "ivc_calibrated": 0
+        }
+      },
+      "control_mre": 25.90655749120795,
+      "treatment_mre": 25.438060836982675,
+      "delta_mre": -0.4684966542252731,
+      "control_param_mae": 17.855908774300172,
+      "treatment_param_mae": 17.773413760156718,
+      "delta_param_mae": -0.08249501414345417
+    },
+    {
+      "fold": 1,
+      "postprocess_counts": {
+        "control": {
+          "hc_scaled": 2,
+          "projected": 300,
+          "ivc_calibrated": 2
+        },
+        "treatment": {
+          "hc_scaled": 2,
+          "projected": 300,
+          "ivc_calibrated": 3
+        }
+      },
+      "control_mre": 22.98030692513585,
+      "treatment_mre": 21.866298266358015,
+      "delta_mre": -1.1140086587778342,
+      "control_param_mae": 17.877620403103734,
+      "treatment_param_mae": 17.345383561643747,
+      "delta_param_mae": -0.5322368414599872
+    },
+    {
+      "fold": 2,
+      "postprocess_counts": {
+        "control": {
+          "hc_scaled": 2,
+          "projected": 300,
+          "ivc_calibrated": 1
+        },
+        "treatment": {
+          "hc_scaled": 2,
+          "projected": 300,
+          "ivc_calibrated": 3
+        }
+      },
+      "control_mre": 20.507774384966183,
+      "treatment_mre": 19.941697445732277,
+      "delta_mre": -0.5660769392339056,
+      "control_param_mae": 15.689434759313464,
+      "treatment_param_mae": 16.867246061546073,
+      "delta_param_mae": 1.1778113022326089
+    },
+    {
+      "fold": 3,
+      "postprocess_counts": {
+        "control": {
+          "hc_scaled": 6,
+          "projected": 300,
+          "ivc_calibrated": 2
+        },
+        "treatment": {
+          "hc_scaled": 6,
+          "projected": 300,
+          "ivc_calibrated": 1
+        }
+      },
+      "control_mre": 19.662616363507176,
+      "treatment_mre": 20.361073402936928,
+      "delta_mre": 0.6984570394297513,
+      "control_param_mae": 17.507149918974882,
+      "treatment_param_mae": 19.070984615684186,
+      "delta_param_mae": 1.5638346967093035
+    },
+    {
+      "fold": 4,
+      "postprocess_counts": {
+        "control": {
+          "hc_scaled": 6,
+          "projected": 299,
+          "ivc_calibrated": 1
+        },
+        "treatment": {
+          "hc_scaled": 6,
+          "projected": 299,
+          "ivc_calibrated": 1
+        }
+      },
+      "control_mre": 24.1060428934712,
+      "treatment_mre": 24.16873521740646,
+      "delta_mre": 0.06269232393525925,
+      "control_param_mae": 18.5999329729533,
+      "treatment_param_mae": 17.91683935081121,
+      "delta_param_mae": -0.683093622142092
+    }
+  ],
+  "summary": {
+    "mre": {
+      "control_mean": 22.63265961165767,
+      "treatment_mean": 22.35517303388327,
+      "paired_mean_delta": -0.27748657777440044,
+      "favorable_folds": 3,
+      "corrected_ci95": [
+        -1.556970517362676,
+        1.001997361813875
+      ]
+    },
+    "param_mae": {
+      "control_mean": 17.50600936572911,
+      "treatment_mean": 17.794773469968383,
+      "paired_mean_delta": 0.2887641042392758,
+      "favorable_folds": 3,
+      "corrected_ci95": [
+        -1.613489337896441,
+        2.1910175463749924
+      ]
+    }
+  },
+  "per_task_mean_delta": {
+    "A4C": {
+      "mre": -0.04378592110884796,
+      "param_mae": -0.3745081705653465
+    },
+    "AOP": {
+      "mre": -0.13813635008092184,
+      "param_mae": -0.314597280702522
+    },
+    "FA": {
+      "mre": 0.08144656297146433,
+      "param_mae": -0.5011136610570063
+    },
+    "FUGC": {
+      "mre": -0.05236529290159524,
+      "param_mae": 0.11056169632828539
+    },
+    "HC": {
+      "mre": -0.34514363695906985,
+      "param_mae": -0.29287682722946895
+    },
+    "IVC": {
+      "mre": 0.7925476520694594,
+      "param_mae": 0.3291459154525221
+    },
+    "PLAX": {
+      "mre": -0.17081108531047634,
+      "param_mae": 0.5096061972106792
+    },
+    "PSAX": {
+      "mre": -0.9107301535962037,
+      "param_mae": 4.1504090140101555
+    },
+    "fetal_femur": {
+      "mre": -1.7104009750534221,
+      "param_mae": -1.0177499452938013
+    }
+  }
+}

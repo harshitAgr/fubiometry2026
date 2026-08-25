@@ -1,0 +1,82 @@
+FU_Biometry 2026 challenge entry
+Copyright 2026 Harshit Agrawal / AIATELLA Oy.
+
+This product includes software developed by the above.
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+================================================================================
+SCOPE OF THE APACHE-2.0 GRANT
+================================================================================
+
+The Apache-2.0 licence in LICENSE covers ONLY the files authored by us. The
+vendored files below are third-party works, are NOT licensed by us, and are NOT
+covered by that grant. They are included here to make our submission
+reproducible and to support the manual verification of method descriptions that
+the Participation Rules apply to top-ranked entries (3.1).
+
+1. Organizer baseline  --  baseline/baseline/
+   Source: https://github.com/lijiake2408/Foundation-Model-for-Ultrasound-Biometry
+   Commit: 603263bc71589c9250eb99337094b0f451957bb4 (2026-04-23), directory
+   baseline/, flattened one level so the import path our trainers use resolves.
+
+   - dataset.py, model.py, model_factory.py, train.py, utils.py
+       Byte-identical to upstream (verified by diff against that commit).
+       Copyright remains with the FU_Biometry 2026 organizers. Upstream
+       publishes NO LICENSE file, so no licence terms are stated for these
+       files and we assert none. They are redistributed here only because our
+       training code imports them (KeypointDataset,
+       MultiTaskModelFactory, HeatmapHead, DINOv2Backbone, keypoint_collate_fn,
+       set_seed, _stratified_split_indices, InferenceDataset, Model). Anyone
+       wishing to reuse them should obtain terms from the upstream authors.
+
+   - evaluate.py and visualize.py are deliberately NOT redistributed: nothing
+     here imports them.
+
+2. Derived from the organizer baseline  --  docker/fub_arch.py
+   Our modified derivative of upstream model_factory.py (HeatmapHead,
+   DINOv2Backbone) combined with our experiments/per_task_model.py. Vendored
+   into the container because the image has no baseline/ tree and because the
+   name model.py is reserved for the wrapper the organizer entry script
+   imports. Our modifications are Apache-2.0; the underlying upstream code is
+   subject to paragraph 1 above. The two deliberate deviations
+   (pretrained=False, fixed 9-task TASK_SPEC) are documented in its docstring.
+
+3. Organizer inference entry point  --  docker/predict.py
+   Provided by the organizers with the instruction "do not modify", and shipped
+   here byte-identical. Same terms as paragraph 1.
+
+================================================================================
+UPSTREAM MODELS AND DATA
+================================================================================
+
+No model weights and no challenge data are distributed in this repository.
+
+- DINOv2 (Apache-2.0), Oquab et al. 2023. The stage-1 encoder continues DINO
+  self-distillation from the public vit_base_patch14_dinov2.lvd142m weights,
+  loaded through timm (Apache-2.0). 144 of its 174 tensors remain bit-identical
+  to those public weights; see experiments/results/dino_ssl_vitb_5fold/
+  encoder_export_audit.json.
+
+- FU_Biometry 2026 challenge data (CC BY-NC), from the organizers. Not
+  redistributed. Any checkpoint trained on it is non-commercial.
+
+- Fetal Biometry multicentre landmark dataset
+  (FetalBiometry-Multicentre-Landmarks-2026; FP / UCL / HC18 subsets with
+  expert landmark annotations). Used for EVALUATION AND CALIBRATION ONLY --
+  the out-of-sample fit of the single HC ellipse-scale constant, and as a
+  labelled proxy for the validation domain. Never trained on. No annotations of
+  it were created by us and none of it is redistributed here. Its own README
+  defers licensing to a LICENSE file that was not present in the copy we
+  obtained, so no terms are asserted for it; obtain it, and its terms, from its
+  authors.
+
+- Built on PyTorch (BSD-3-Clause), timm (Apache-2.0), albumentations
+  (MIT), OpenCV (Apache-2.0), NumPy / SciPy / pandas (BSD-3-Clause).
+
+- Rejected encoder alternatives. experiments/encoders.py retains selectable
+  code paths for USFM (BEiT-B/16 ultrasound SSL) and DINOv3 ViT-S/B/16, both of
+  which were evaluated against the DINOv2 spine and rejected. Neither is used
+  by the submitted system, neither is reachable from the container, and no
+  weights for either are distributed here; both would have to be obtained
+  separately, and the DINOv3 weights are gated under Meta's own DINOv3 licence.
+  MedSapiens was triaged on paper only -- no code path for it exists here.

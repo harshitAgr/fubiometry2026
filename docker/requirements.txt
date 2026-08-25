@@ -1,0 +1,7 @@
+# torch/torchvision come from the base image (pytorch/pytorch:2.3.1-cuda12.1-cudnn8-runtime).
+# Deliberately minimal: albumentations and pandas are NOT used (A.Resize/A.Normalize are
+# replicated in cv2+numpy, metadata is read with the stdlib csv module), so there is less
+# version surface to break inside an image we cannot fully smoke-test on the target GPU.
+timm==1.0.27
+numpy==1.26.4
+opencv-python-headless==4.11.0.86

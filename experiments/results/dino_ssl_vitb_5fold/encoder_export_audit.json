@@ -1,0 +1,23 @@
+{
+  "audit_date_utc": "2026-08-11",
+  "encoder": "dinov2_vitb",
+  "pretrain_steps": 4587,
+  "pretrain_final_ema_loss": 3.6670727158842666,
+  "pretrain_log_sha256": "592412b0c6afe9b7059fb16e84e3e16955a003a07986c2791a52d1021252e662",
+  "full_dino_sha256": "6ef720fb7db146dd0c03ab0f85516d72d494e014f4632ba997748dc296414897",
+  "raw_teacher_encoder_sha256": "2f8fa43abcc24af7728c9ff0e0e3b61a3062fe1223470db6c417bb0520a76899",
+  "corrected_encoder_sha256": "13edc7ddaa0690c0b3bcf3bcb15b49999f21a4903d9eccab5316aefbbc886c3f",
+  "total_backbone_tensors": 174,
+  "ema_teacher_tensors_retained": 30,
+  "frozen_student_tensors_restored": 144,
+  "changed_groups_vs_public_init": [
+    "blocks.10",
+    "blocks.11",
+    "norm"
+  ],
+  "unexpected_changed_tensors": [],
+  "nonfinite_tensors": [],
+  "reason": "Repeated float32 EMA multiply/add operations introduce deterministic roundoff even when frozen teacher and student tensors are mathematically equal. Frozen tensors were restored from the unchanged student backbone stored in full_dino.pth; EMA teacher values were retained for the trainable last two blocks and final norm.",
+  "raw_checkpoint_preserved_as": "runs/dino_ssl_vitb/encoder_ema_raw.pth",
+  "corrected_checkpoint_used_by_cv": "runs/dino_ssl_vitb/encoder.pth"
+}

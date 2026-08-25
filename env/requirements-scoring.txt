@@ -1,0 +1,26 @@
+# Project venv (scoring library, fold construction, pure analysis units). Python 3.12.
+# Exact resolved set from the machine that produced the submitted models; `uv sync` from
+# the repository's pyproject.toml + uv.lock reproduces it.
+beautifulsoup4==4.15.0
+certifi==2026.5.20
+charset-normalizer==3.4.7
+filelock==3.29.4
+gdown==6.1.0
+idna==3.18
+iniconfig==2.3.0
+numpy==2.4.6
+packaging==26.2
+pandas==3.0.3
+pillow==12.2.0
+pluggy==1.6.0
+pygments==2.20.0
+pysocks==1.7.1
+pytest==9.1.0
+python-dateutil==2.9.0.post0
+requests==2.34.2
+scipy==1.17.1
+six==1.17.0
+soupsieve==2.8.4
+tqdm==4.68.2
+typing-extensions==4.15.0
+urllib3==2.7.0

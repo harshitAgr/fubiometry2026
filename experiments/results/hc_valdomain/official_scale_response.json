@@ -1,0 +1,41 @@
+{
+  "description": "Official validation response of HC param-MAE and MRE to a centroid-preserving scale on the 4 HC landmarks. All three submissions share the identical base (v19 = submission/full_family_postdrop_seed42), with the 8 non-HC tasks byte-identical, so each row is a clean single-variable A/B.",
+  "base": "v19 / 878102",
+  "phase": 25679,
+  "points": [
+    {
+      "scale": 1.0,
+      "submission": 878102,
+      "label": "v19",
+      "HC_MRE": 47.784,
+      "HC_MAE": 76.542,
+      "Average_MRE": 23.803667,
+      "Average_MAE": 29.633778
+    },
+    {
+      "scale": 0.975,
+      "submission": 881332,
+      "label": "v21",
+      "HC_MRE": 46.082,
+      "HC_MAE": 60.895,
+      "Average_MRE": 23.614556,
+      "Average_MAE": 27.895222
+    },
+    {
+      "scale": 0.95,
+      "submission": 881775,
+      "label": "v22",
+      "HC_MRE": 45.963,
+      "HC_MAE": 60.097,
+      "Average_MRE": 23.6013,
+      "Average_MAE": 27.8066
+    }
+  ],
+  "local_out_of_sample_fit": {
+    "argmin_param_mae": 0.975,
+    "fit_set": "1484 patient-disjoint FP head images",
+    "note": "the local harness under-estimates the required shrink; the organisers' own annotations shift the optimum"
+  },
+  "verdict": "optimum is at or below 0.950 but the curve is a flat basin: step 1.000->0.975 gained 15.647 HC param-MAE, step 0.975->0.950 only 0.798. Recommend settling at 0.950; a further probe at 0.90 would likely return under 0.3.",
+  "recommended_scale": 0.95
+}

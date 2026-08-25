@@ -1,0 +1,183 @@
+{
+  "protocol": "OOF old-vs-continued-DINO Docker route; same route mode and post-processing; route_mode=pragmatic",
+  "prediction_sources": {
+    "control": {
+      "base": "scratch_tmp/vitb_window9",
+      "hcsmall": "submission/hcsmall",
+      "hchead": "submission/hchead"
+    },
+    "treatment": {
+      "base": "submission/dino_ssl_vitb_5fold_window9",
+      "hcsmall": "submission/dino_ssl_vitb_hcsmall_5fold",
+      "hchead": "submission/dino_ssl_vitb_hchead_5fold"
+    }
+  },
+  "official_validation_used": false,
+  "folds": [
+    {
+      "fold": 0,
+      "postprocess_counts": {
+        "control": {
+          "hc_scaled": 3,
+          "projected": 300,
+          "ivc_calibrated": 1
+        },
+        "treatment": {
+          "hc_scaled": 3,
+          "projected": 300,
+          "ivc_calibrated": 0
+        }
+      },
+      "control_mre": 25.64247570306481,
+      "treatment_mre": 25.22489998242463,
+      "delta_mre": -0.4175757206401798,
+      "control_param_mae": 17.572769910506846,
+      "treatment_param_mae": 17.46486008591168,
+      "delta_param_mae": -0.10790982459516485
+    },
+    {
+      "fold": 1,
+      "postprocess_counts": {
+        "control": {
+          "hc_scaled": 2,
+          "projected": 300,
+          "ivc_calibrated": 2
+        },
+        "treatment": {
+          "hc_scaled": 2,
+          "projected": 300,
+          "ivc_calibrated": 3
+        }
+      },
+      "control_mre": 22.73336808371566,
+      "treatment_mre": 21.78992272946788,
+      "delta_mre": -0.9434453542477819,
+      "control_param_mae": 17.447477015674824,
+      "treatment_param_mae": 17.41162176887859,
+      "delta_param_mae": -0.03585524679623475
+    },
+    {
+      "fold": 2,
+      "postprocess_counts": {
+        "control": {
+          "hc_scaled": 2,
+          "projected": 300,
+          "ivc_calibrated": 1
+        },
+        "treatment": {
+          "hc_scaled": 2,
+          "projected": 300,
+          "ivc_calibrated": 3
+        }
+      },
+      "control_mre": 20.290185270337513,
+      "treatment_mre": 19.78962717940472,
+      "delta_mre": -0.5005580909327918,
+      "control_param_mae": 15.739159322661326,
+      "treatment_param_mae": 16.447180954126917,
+      "delta_param_mae": 0.7080216314655914
+    },
+    {
+      "fold": 3,
+      "postprocess_counts": {
+        "control": {
+          "hc_scaled": 6,
+          "projected": 300,
+          "ivc_calibrated": 2
+        },
+        "treatment": {
+          "hc_scaled": 6,
+          "projected": 300,
+          "ivc_calibrated": 1
+        }
+      },
+      "control_mre": 19.685463231222002,
+      "treatment_mre": 19.841104257299733,
+      "delta_mre": 0.15564102607773123,
+      "control_param_mae": 17.27342140277393,
+      "treatment_param_mae": 18.244227980212514,
+      "delta_param_mae": 0.9708065774385837
+    },
+    {
+      "fold": 4,
+      "postprocess_counts": {
+        "control": {
+          "hc_scaled": 6,
+          "projected": 299,
+          "ivc_calibrated": 1
+        },
+        "treatment": {
+          "hc_scaled": 6,
+          "projected": 299,
+          "ivc_calibrated": 1
+        }
+      },
+      "control_mre": 23.88589934361769,
+      "treatment_mre": 23.88944496945709,
+      "delta_mre": 0.003545625839400657,
+      "control_param_mae": 17.919583408075965,
+      "treatment_param_mae": 17.53975331975282,
+      "delta_param_mae": -0.37983008832314624
+    }
+  ],
+  "summary": {
+    "mre": {
+      "control_mean": 22.447478326391536,
+      "treatment_mean": 22.10699982361081,
+      "paired_mean_delta": -0.34047850278072433,
+      "favorable_folds": 3,
+      "corrected_ci95": [
+        -1.1521217279138312,
+        0.4711647223523824
+      ]
+    },
+    "param_mae": {
+      "control_mean": 17.19048221193858,
+      "treatment_mean": 17.421528821776505,
+      "paired_mean_delta": 0.23104660983792585,
+      "favorable_folds": 3,
+      "corrected_ci95": [
+        -0.844554256662926,
+        1.3066474763387776
+      ]
+    }
+  },
+  "per_task_mean_delta": {
+    "A4C": {
+      "mre": 0.10972452602137679,
+      "param_mae": -0.9581998369227549
+    },
+    "AOP": {
+      "mre": 0.20094089881746485,
+      "param_mae": 0.31630766630468016
+    },
+    "FA": {
+      "mre": 0.06050423004299858,
+      "param_mae": 0.06764890130469041
+    },
+    "FUGC": {
+      "mre": -0.040630224191026264,
+      "param_mae": 0.02781731080700034
+    },
+    "HC": {
+      "mre": -0.34514363695906985,
+      "param_mae": -0.29287682722946895
+    },
+    "IVC": {
+      "mre": 0.7925476520694594,
+      "param_mae": 0.3291459154525221
+    },
+    "PLAX": {
+      "mre": -0.14910687549321544,
+      "param_mae": 0.42357552481229244
+    },
+    "PSAX": {
+      "mre": -1.9155802144526377,
+      "param_mae": 2.7123034118863907
+    },
+    "fetal_femur": {
+      "mre": -1.7775628808818662,
+      "param_mae": -0.5463025778740132
+    }
+  }
+}

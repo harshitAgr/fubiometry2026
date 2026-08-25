@@ -1,0 +1,112 @@
+{
+  "passed": true,
+  "protocol": "continued_dino_vitb_full_family_no_val_v1",
+  "encoder_init": "runs/dino_ssl_vitb/encoder.pth",
+  "encoder_init_sha256": "13edc7ddaa0690c0b3bcf3bcb15b49999f21a4903d9eccab5316aefbbc886c3f",
+  "runs": [
+    {
+      "role": "base_s42",
+      "run": "runs/vitb_full_dino_corr",
+      "seed": 42,
+      "epochs": 40,
+      "train_examples": 6727,
+      "checkpoint_sha256": "264c79797d380d5472f2546f3aa5345350b704e0ee043f64601becb222c23308",
+      "checkpoint_bytes": 466006205,
+      "metrics_sha256": "72a64e6493dd261194a027d3fa3e44fe3595588a24d336ec6fabe7cb74bdde1a",
+      "manifest_sha256": "427fc2eb37ffd7dd528fe7ab63664b1f751fbb65c8c6d77e7addb57d7a9d1f4c",
+      "validation_run": false
+    },
+    {
+      "role": "base_s43",
+      "run": "runs/vitb_full_dino_corr_s43",
+      "seed": 43,
+      "epochs": 40,
+      "train_examples": 6727,
+      "checkpoint_sha256": "4f6b0d47b0cda0cb9d8b727456c7fae738281c2dd645fee84327e7fe9b527b6a",
+      "checkpoint_bytes": 466006205,
+      "metrics_sha256": "ef495afe1dfbc52466bfaa83c737f762e88d317b9b506354e6e35e32f0bd6277",
+      "manifest_sha256": "2bba837fb79fbc2f7710b463df9e328e9188a2aa507e4ac787b2b7675bc0a4c1",
+      "validation_run": false
+    },
+    {
+      "role": "base_s44",
+      "run": "runs/vitb_full_dino_corr_s44",
+      "seed": 44,
+      "epochs": 40,
+      "train_examples": 6727,
+      "checkpoint_sha256": "eb8bb9c875c05e0d437b4bfca75d2258c1ca1f60d68db5c3f7bb507cac940113",
+      "checkpoint_bytes": 466006205,
+      "metrics_sha256": "e513ac8a5baa5cca9589482424888328358ebb7d7bc6f9db4a1cc8a97291695d",
+      "manifest_sha256": "308aa598aa6c0c68796b3f388b0c38bdd7d74f42c70ed5cf9ca07e286c8af57c",
+      "validation_run": false
+    },
+    {
+      "role": "base_s45",
+      "run": "runs/vitb_full_dino_corr_s45",
+      "seed": 45,
+      "epochs": 40,
+      "train_examples": 6727,
+      "checkpoint_sha256": "acefb9f648ebb0ebb045fbb8063e2f6683ba26bd8f385d3ae141068caf69a215",
+      "checkpoint_bytes": 466006205,
+      "metrics_sha256": "8f7c422ce9ad8db5f0de2df9aea4e8e3fcbcf25cadcfea4eaf02fb684403852b",
+      "manifest_sha256": "f18fabd6374ff3863f76042eca3e56aa3b03f5d8338cf096d5afe33f6362bbd1",
+      "validation_run": false
+    },
+    {
+      "role": "base_s46",
+      "run": "runs/vitb_full_dino_corr_s46",
+      "seed": 46,
+      "epochs": 40,
+      "train_examples": 6727,
+      "checkpoint_sha256": "fe491fad70df96324d4048966be96771b0282d61fb26a02b6186d1d149b1a4cd",
+      "checkpoint_bytes": 466006205,
+      "metrics_sha256": "585bb4105765d0c1e599b1dccd4d342664cfddc221d0e4442b0bc06c8a7f4911",
+      "manifest_sha256": "d9ead702da10891bd5e80b1737d1914c71fb683c42e49a5d90d53fddacaa0556",
+      "validation_run": false
+    },
+    {
+      "role": "hcsmall_s42",
+      "run": "runs/vitb_full_dino_hcsmall_corr",
+      "seed": 42,
+      "epochs": 40,
+      "train_examples": 6727,
+      "checkpoint_sha256": "79c3c273b5e4f7a5d30f12dcbd39faaf8024347e4bfc630bdc0daba49109bfc2",
+      "checkpoint_bytes": 466006205,
+      "metrics_sha256": "ca69b41b69c4ec3a32f2941b1e05683ea5f11076adeb924b878e336716eeb3c0",
+      "manifest_sha256": "e70b1adeffc1f07496cf2fa7b55d3cc7aa382d6ab6668b2e8c06d6e92b7e1a8b",
+      "validation_run": false
+    },
+    {
+      "role": "hchead_s42",
+      "run": "runs/vitb_full_dino_hchead_corr",
+      "seed": 42,
+      "epochs": 5,
+      "train_examples": 999,
+      "checkpoint_sha256": "2a5d43069c5d4ba9455ab6fd8c142b3dc15e1c7a5ec773ba055111f9e1a20240",
+      "checkpoint_bytes": 466006205,
+      "metrics_sha256": "844b65f4a56fbd5c562a88777d9f7a2f1340adcc34400a8bfaf7a1fa14374ff0",
+      "manifest_sha256": "14cf15eea9a3e34ffcbf384fb97fe81161efb391375728e2e8978df37c4fbf62",
+      "validation_run": false
+    }
+  ],
+  "hchead_changed_tensors": [
+    "heads.HC.decoder.0.weight",
+    "heads.HC.decoder.1.weight",
+    "heads.HC.decoder.1.bias",
+    "heads.HC.decoder.1.running_mean",
+    "heads.HC.decoder.1.running_var",
+    "heads.HC.decoder.1.num_batches_tracked",
+    "heads.HC.decoder.4.weight",
+    "heads.HC.decoder.5.weight",
+    "heads.HC.decoder.5.bias",
+    "heads.HC.decoder.5.running_mean",
+    "heads.HC.decoder.5.running_var",
+    "heads.HC.decoder.5.num_batches_tracked",
+    "heads.HC.decoder.8.weight",
+    "heads.HC.decoder.8.bias"
+  ],
+  "docker_modified": false,
+  "docker_built": false,
+  "validation_inference_run": false,
+  "submission_made": false
+}

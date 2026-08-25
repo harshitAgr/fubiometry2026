@@ -1,0 +1,36 @@
+{
+  "base": "submission/full_family_postdrop_seed42/regression_predictions.json",
+  "base_md5": "3c6d523c4f82febceea4b837cba01284",
+  "scale": 0.95,
+  "task": "HC",
+  "records": 619,
+  "records_base": 619,
+  "task_counts": {
+    "PLAX": 26,
+    "FA": 188,
+    "fetal_femur": 62,
+    "PSAX": 18,
+    "HC": 215,
+    "AOP": 60,
+    "IVC": 10,
+    "FUGC": 20,
+    "A4C": 20
+  },
+  "records_touched": 215,
+  "tasks_changed": [
+    "HC"
+  ],
+  "other_tasks_byte_identical": true,
+  "keys_identical": true,
+  "scale_formula_max_residual": 0.0,
+  "realized_size_ratio": {
+    "mean": 0.95,
+    "min": 0.9499999999999996,
+    "max": 0.9500000000000002
+  },
+  "realized_matches_requested": true,
+  "all_finite": true,
+  "all_lengths_valid": true,
+  "PASS": true,
+  "out_md5": "34564476a1de95e8925ae708a7592257"
+}

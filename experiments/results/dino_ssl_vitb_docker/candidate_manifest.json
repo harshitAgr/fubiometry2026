@@ -1,0 +1,29 @@
+{
+  "passed_local_gates": true,
+  "generated_utc": "2026-08-13T06:26:36+00:00",
+  "candidate": "continued_dinov2_vitb_seven_member",
+  "local_image_id": "sha256:9d716176261d1c5d3132a35f81fc5e478206f73a3d590bf95a63aea8a9763815",
+  "docker_reported_size_bytes": 6875902512,
+  "reference": {
+    "path": "submission/ship_dino/regression_predictions.json",
+    "sha256": "3cb0fef96e80966d6787071a1b2a0e6f07fe4c618216e42140ba7e176348eed8",
+    "records": 619,
+    "tasks": 9
+  },
+  "verification": {
+    "checkpoint_hashes_match_staging_manifest": true,
+    "all_seven_members_strict_loaded_at_build": true,
+    "independent_research_vs_docker_max_abs_px": 0.00018465,
+    "independent_research_vs_docker_tolerance_px": 0.001,
+    "guard_selfcheck": "6 passed, 0 failed",
+    "project_tests": "395 passed, 29 skipped",
+    "offline_cpu_entrypoint": "passed, 18/18 records, all 9 tasks",
+    "network_disabled_during_entrypoint_check": true,
+    "container_limits": "7 GB RAM, 4 CPU, 2 GB shm",
+    "ampere_cuda_container_tested": false,
+    "ampere_cuda_note": "Required before submission; this Blackwell host cannot run the CUDA 12.1 image."
+  },
+  "official_validation_used_for_selection": false,
+  "final_test_submission_made": false,
+  "submission_authorized": false
+}

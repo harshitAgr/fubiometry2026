@@ -1,0 +1,361 @@
+{
+  "fit": {
+    "set": "FP heads, patient-disjoint from val, unseen in training",
+    "n": 1484,
+    "baseline": {
+      "n": 1484,
+      "mre": 26.233169069082503,
+      "param_mae": 46.549116790577756,
+      "size_ratio_mean": 1.2558115253526247,
+      "size_ratio_median": 1.026701082777997,
+      "size_ratio_p10": 1.01069146396785,
+      "size_ratio_p90": 1.0481546784941354,
+      "note": "mean is outlier-sensitive (a collapsed prediction can give ratio>100); use the median"
+    },
+    "s_star_param_mae": 0.975,
+    "at_s_star": {
+      "n": 1484,
+      "mre": 24.508063303682366,
+      "param_mae": 20.765935134365805,
+      "size_ratio_mean": 1.2244162372188092,
+      "size_ratio_median": 1.0010335557085472,
+      "size_ratio_p10": 0.9854241773686538,
+      "size_ratio_p90": 1.021950811531782,
+      "note": "mean is outlier-sensitive (a collapsed prediction can give ratio>100); use the median"
+    },
+    "s_star_mre": 0.9725,
+    "best_mre": {
+      "n": 1484,
+      "mre": 24.492750142512655,
+      "param_mae": 20.952516944849325,
+      "size_ratio_mean": 1.2212767084054277,
+      "size_ratio_median": 0.9984668030016022,
+      "size_ratio_p10": 0.9828974487087342,
+      "size_ratio_p90": 1.0193304248355466,
+      "note": "mean is outlier-sensitive (a collapsed prediction can give ratio>100); use the median"
+    },
+    "curve": {
+      "1.0000": {
+        "n": 1484,
+        "mre": 26.233169069082503,
+        "param_mae": 46.549116790577756,
+        "size_ratio_mean": 1.2558115253526247,
+        "size_ratio_median": 1.026701082777997,
+        "size_ratio_p10": 1.01069146396785,
+        "size_ratio_p90": 1.0481546784941354,
+        "note": "mean is outlier-sensitive (a collapsed prediction can give ratio>100); use the median"
+      },
+      "0.9975": {
+        "n": 1484,
+        "mre": 25.953241159139573,
+        "param_mae": 42.89929317786623,
+        "size_ratio_mean": 1.2526719965392432,
+        "size_ratio_median": 1.024134330071052,
+        "size_ratio_p10": 1.0081647353079304,
+        "size_ratio_p90": 1.0455342917979,
+        "note": "mean is outlier-sensitive (a collapsed prediction can give ratio>100); use the median"
+      },
+      "0.9950": {
+        "n": 1484,
+        "mre": 25.69274157872815,
+        "param_mae": 39.344828846654146,
+        "size_ratio_mean": 1.2495324677258617,
+        "size_ratio_median": 1.0215675773641069,
+        "size_ratio_p10": 1.0056380066480108,
+        "size_ratio_p90": 1.0429139051016647,
+        "note": "mean is outlier-sensitive (a collapsed prediction can give ratio>100); use the median"
+      },
+      "0.9925": {
+        "n": 1484,
+        "mre": 25.453171371622417,
+        "param_mae": 35.94638217209421,
+        "size_ratio_mean": 1.2463929389124802,
+        "size_ratio_median": 1.019000824657162,
+        "size_ratio_p10": 1.0031112779880913,
+        "size_ratio_p90": 1.0402935184054294,
+        "note": "mean is outlier-sensitive (a collapsed prediction can give ratio>100); use the median"
+      },
+      "0.9900": {
+        "n": 1484,
+        "mre": 25.23611270465236,
+        "param_mae": 32.70578565627166,
+        "size_ratio_mean": 1.2432534100990986,
+        "size_ratio_median": 1.016434071950217,
+        "size_ratio_p10": 1.0005845493281713,
+        "size_ratio_p90": 1.037673131709194,
+        "note": "mean is outlier-sensitive (a collapsed prediction can give ratio>100); use the median"
+      },
+      "0.9875": {
+        "n": 1484,
+        "mre": 25.04342427264353,
+        "param_mae": 29.651540517900333,
+        "size_ratio_mean": 1.240113881285717,
+        "size_ratio_median": 1.0138673192432721,
+        "size_ratio_p10": 0.9980578206682518,
+        "size_ratio_p90": 1.0350527450129585,
+        "note": "mean is outlier-sensitive (a collapsed prediction can give ratio>100); use the median"
+      },
+      "0.9850": {
+        "n": 1484,
+        "mre": 24.87741672753082,
+        "param_mae": 26.90309975710059,
+        "size_ratio_mean": 1.2369743524723353,
+        "size_ratio_median": 1.011300566536327,
+        "size_ratio_p10": 0.9955310920083322,
+        "size_ratio_p90": 1.032432358316723,
+        "note": "mean is outlier-sensitive (a collapsed prediction can give ratio>100); use the median"
+      },
+      "0.9825": {
+        "n": 1484,
+        "mre": 24.739729149805946,
+        "param_mae": 24.594650721595215,
+        "size_ratio_mean": 1.2338348236589538,
+        "size_ratio_median": 1.0087338138293822,
+        "size_ratio_p10": 0.9930043633484127,
+        "size_ratio_p90": 1.029811971620488,
+        "note": "mean is outlier-sensitive (a collapsed prediction can give ratio>100); use the median"
+      },
+      "0.9800": {
+        "n": 1484,
+        "mre": 24.631332285612974,
+        "param_mae": 22.737966061614035,
+        "size_ratio_mean": 1.2306952948455723,
+        "size_ratio_median": 1.006167061122437,
+        "size_ratio_p10": 0.9904776346884929,
+        "size_ratio_p90": 1.0271915849242526,
+        "note": "mean is outlier-sensitive (a collapsed prediction can give ratio>100); use the median"
+      },
+      "0.9775": {
+        "n": 1484,
+        "mre": 24.554168340620794,
+        "param_mae": 21.383041633002968,
+        "size_ratio_mean": 1.2275557660321907,
+        "size_ratio_median": 1.003600308415492,
+        "size_ratio_p10": 0.9879509060285736,
+        "size_ratio_p90": 1.0245711982280172,
+        "note": "mean is outlier-sensitive (a collapsed prediction can give ratio>100); use the median"
+      },
+      "0.9750": {
+        "n": 1484,
+        "mre": 24.508063303682366,
+        "param_mae": 20.765935134365805,
+        "size_ratio_mean": 1.2244162372188092,
+        "size_ratio_median": 1.0010335557085472,
+        "size_ratio_p10": 0.9854241773686538,
+        "size_ratio_p90": 1.021950811531782,
+        "note": "mean is outlier-sensitive (a collapsed prediction can give ratio>100); use the median"
+      },
+      "0.9725": {
+        "n": 1484,
+        "mre": 24.492750142512655,
+        "param_mae": 20.952516944849325,
+        "size_ratio_mean": 1.2212767084054277,
+        "size_ratio_median": 0.9984668030016022,
+        "size_ratio_p10": 0.9828974487087342,
+        "size_ratio_p90": 1.0193304248355466,
+        "note": "mean is outlier-sensitive (a collapsed prediction can give ratio>100); use the median"
+      },
+      "0.9700": {
+        "n": 1484,
+        "mre": 24.50768012248752,
+        "param_mae": 21.844618748503038,
+        "size_ratio_mean": 1.218137179592046,
+        "size_ratio_median": 0.9959000502946571,
+        "size_ratio_p10": 0.9803707200488146,
+        "size_ratio_p90": 1.016710038139311,
+        "note": "mean is outlier-sensitive (a collapsed prediction can give ratio>100); use the median"
+      },
+      "0.9675": {
+        "n": 1484,
+        "mre": 24.551375825438843,
+        "param_mae": 23.27233926442971,
+        "size_ratio_mean": 1.2149976507786646,
+        "size_ratio_median": 0.993333297587712,
+        "size_ratio_p10": 0.9778439913888949,
+        "size_ratio_p90": 1.014089651443076,
+        "note": "mean is outlier-sensitive (a collapsed prediction can give ratio>100); use the median"
+      },
+      "0.9650": {
+        "n": 1484,
+        "mre": 24.6228170166881,
+        "param_mae": 25.18124943917477,
+        "size_ratio_mean": 1.2118581219652829,
+        "size_ratio_median": 0.9907665448807671,
+        "size_ratio_p10": 0.9753172627289756,
+        "size_ratio_p90": 1.0114692647468404,
+        "note": "mean is outlier-sensitive (a collapsed prediction can give ratio>100); use the median"
+      },
+      "0.9625": {
+        "n": 1484,
+        "mre": 24.721750565079642,
+        "param_mae": 27.48916825230121,
+        "size_ratio_mean": 1.2087185931519013,
+        "size_ratio_median": 0.9881997921738223,
+        "size_ratio_p10": 0.9727905340690558,
+        "size_ratio_p90": 1.0088488780506053,
+        "note": "mean is outlier-sensitive (a collapsed prediction can give ratio>100); use the median"
+      },
+      "0.9600": {
+        "n": 1484,
+        "mre": 24.847510197031763,
+        "param_mae": 30.09364468612471,
+        "size_ratio_mean": 1.2055790643385198,
+        "size_ratio_median": 0.985633039466877,
+        "size_ratio_p10": 0.970263805409136,
+        "size_ratio_p90": 1.00622849135437,
+        "note": "mean is outlier-sensitive (a collapsed prediction can give ratio>100); use the median"
+      },
+      "0.9575": {
+        "n": 1484,
+        "mre": 24.998253608708094,
+        "param_mae": 32.967978917347544,
+        "size_ratio_mean": 1.2024395355251383,
+        "size_ratio_median": 0.9830662867599321,
+        "size_ratio_p10": 0.9677370767492163,
+        "size_ratio_p90": 1.0036081046581347,
+        "note": "mean is outlier-sensitive (a collapsed prediction can give ratio>100); use the median"
+      },
+      "0.9550": {
+        "n": 1484,
+        "mre": 25.17222165972796,
+        "param_mae": 36.05892021279221,
+        "size_ratio_mean": 1.1993000067117567,
+        "size_ratio_median": 0.9804995340529871,
+        "size_ratio_p10": 0.965210348089297,
+        "size_ratio_p90": 1.0009877179618993,
+        "note": "mean is outlier-sensitive (a collapsed prediction can give ratio>100); use the median"
+      },
+      "0.9525": {
+        "n": 1484,
+        "mre": 25.36806150755763,
+        "param_mae": 39.29104637897308,
+        "size_ratio_mean": 1.1961604778983752,
+        "size_ratio_median": 0.977932781346042,
+        "size_ratio_p10": 0.9626836194293771,
+        "size_ratio_p90": 0.9983673312656638,
+        "note": "mean is outlier-sensitive (a collapsed prediction can give ratio>100); use the median"
+      },
+      "0.9500": {
+        "n": 1484,
+        "mre": 25.58502050485832,
+        "param_mae": 42.686466444916114,
+        "size_ratio_mean": 1.1930209490849935,
+        "size_ratio_median": 0.9753660286390969,
+        "size_ratio_p10": 0.9601568907694575,
+        "size_ratio_p90": 0.9957469445694286,
+        "note": "mean is outlier-sensitive (a collapsed prediction can give ratio>100); use the median"
+      }
+    }
+  },
+  "eval": {
+    "submission/vitb_ens/regression_predictions.json": {
+      "baseline": {
+        "n": 151,
+        "mre": 26.54675699591143,
+        "param_mae": 45.693715507545775,
+        "size_ratio_mean": 1.0242184053364076,
+        "size_ratio_median": 1.0244725698396668,
+        "size_ratio_p10": 1.0099408484424963,
+        "size_ratio_p90": 1.0392290332192973,
+        "note": "mean is outlier-sensitive (a collapsed prediction can give ratio>100); use the median"
+      },
+      "at_frozen_s": {
+        "n": 151,
+        "mre": 24.98261270049425,
+        "param_mae": 17.640433945339133,
+        "size_ratio_mean": 0.9986129452029975,
+        "size_ratio_median": 0.9988607555936754,
+        "size_ratio_p10": 0.984692327231434,
+        "size_ratio_p90": 1.013248307388815,
+        "note": "mean is outlier-sensitive (a collapsed prediction can give ratio>100); use the median"
+      },
+      "delta_mre": -1.5641442954171794,
+      "delta_param_mae": -28.053281562206642
+    },
+    "submission/v14/regression_predictions.json": {
+      "baseline": {
+        "n": 151,
+        "mre": 26.98426386018064,
+        "param_mae": 54.729391271175636,
+        "size_ratio_mean": 1.0230579491020186,
+        "size_ratio_median": 1.0268838109407858,
+        "size_ratio_p10": 1.010555914897035,
+        "size_ratio_p90": 1.042001232391251,
+        "note": "mean is outlier-sensitive (a collapsed prediction can give ratio>100); use the median"
+      },
+      "at_frozen_s": {
+        "n": 151,
+        "mre": 25.289783691540965,
+        "param_mae": 23.873335009852834,
+        "size_ratio_mean": 0.997481500374468,
+        "size_ratio_median": 1.0012117156672662,
+        "size_ratio_p10": 0.9852920170246087,
+        "size_ratio_p90": 1.01595120158147,
+        "note": "mean is outlier-sensitive (a collapsed prediction can give ratio>100); use the median"
+      },
+      "delta_mre": -1.694480168639675,
+      "delta_param_mae": -30.856056261322802
+    },
+    "submission/full_family_postdrop_seed42/regression_predictions.json": {
+      "baseline": {
+        "n": 151,
+        "mre": 25.642138935717856,
+        "param_mae": 52.19349056078912,
+        "size_ratio_mean": 1.0272236901808949,
+        "size_ratio_median": 1.026456552622677,
+        "size_ratio_p10": 1.0140830649417565,
+        "size_ratio_p90": 1.0427149793232626,
+        "note": "mean is outlier-sensitive (a collapsed prediction can give ratio>100); use the median"
+      },
+      "at_frozen_s": {
+        "n": 151,
+        "mre": 23.74861054499886,
+        "param_mae": 18.766880497353405,
+        "size_ratio_mean": 1.0015430979263724,
+        "size_ratio_median": 1.0007951388071101,
+        "size_ratio_p10": 0.9887309883182125,
+        "size_ratio_p90": 1.0166471048401813,
+        "note": "mean is outlier-sensitive (a collapsed prediction can give ratio>100); use the median"
+      },
+      "delta_mre": -1.8935283907189948,
+      "delta_param_mae": -33.42661006343572
+    }
+  },
+  "subgroups": {
+    "1137x787": {
+      "n": 54,
+      "delta_mre": -2.360219716916614,
+      "delta_param_mae": -41.87582142147754,
+      "local_optimum_s": 0.97,
+      "size_ratio_at_1": 1.030880665875255
+    },
+    "961x663": {
+      "n": 52,
+      "delta_mre": -1.4436124236354537,
+      "delta_param_mae": -29.89447910973324,
+      "local_optimum_s": 0.9775,
+      "size_ratio_at_1": 1.0240831017229852
+    },
+    "959x661": {
+      "n": 33,
+      "delta_mre": -2.0210500561901803,
+      "delta_param_mae": -31.966888642339548,
+      "local_optimum_s": 0.97,
+      "size_ratio_at_1": 1.0277429681162267
+    },
+    "640x392": {
+      "n": 7,
+      "delta_mre": -1.2004709792577408,
+      "delta_param_mae": -19.307853602602563,
+      "local_optimum_s": 0.9675,
+      "size_ratio_at_1": 1.033081964108046
+    },
+    "1495x787": {
+      "n": 5,
+      "delta_mre": -1.6610255093893898,
+      "delta_param_mae": -8.309709739490927,
+      "local_optimum_s": 0.985,
+      "size_ratio_at_1": 1.0157285930013282
+    }
+  }
+}

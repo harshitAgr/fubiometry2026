@@ -1,0 +1,183 @@
+{
+  "protocol": "OOF old-vs-continued-DINO Docker route; same route mode and post-processing; route_mode=pragmatic",
+  "prediction_sources": {
+    "control": {
+      "base": "scratch_tmp/vitb_window9",
+      "hcsmall": "submission/hcsmall",
+      "hchead": "submission/hchead"
+    },
+    "treatment": {
+      "base": "submission/dino_ssl_vitb_5fold_window9",
+      "hcsmall": "submission/hcsmall",
+      "hchead": "submission/hchead"
+    }
+  },
+  "official_validation_used": false,
+  "folds": [
+    {
+      "fold": 0,
+      "postprocess_counts": {
+        "control": {
+          "hc_scaled": 3,
+          "projected": 300,
+          "ivc_calibrated": 1
+        },
+        "treatment": {
+          "hc_scaled": 3,
+          "projected": 300,
+          "ivc_calibrated": 0
+        }
+      },
+      "control_mre": 25.64247570306481,
+      "treatment_mre": 25.358871877214288,
+      "delta_mre": -0.28360382585052335,
+      "control_param_mae": 17.572769910506846,
+      "treatment_param_mae": 18.221271044531782,
+      "delta_param_mae": 0.6485011340249365
+    },
+    {
+      "fold": 1,
+      "postprocess_counts": {
+        "control": {
+          "hc_scaled": 2,
+          "projected": 300,
+          "ivc_calibrated": 2
+        },
+        "treatment": {
+          "hc_scaled": 2,
+          "projected": 300,
+          "ivc_calibrated": 3
+        }
+      },
+      "control_mre": 22.73336808371566,
+      "treatment_mre": 21.888767828396862,
+      "delta_mre": -0.8446002553187988,
+      "control_param_mae": 17.447477015674824,
+      "treatment_param_mae": 17.06765382891281,
+      "delta_param_mae": -0.3798231867620139
+    },
+    {
+      "fold": 2,
+      "postprocess_counts": {
+        "control": {
+          "hc_scaled": 2,
+          "projected": 300,
+          "ivc_calibrated": 1
+        },
+        "treatment": {
+          "hc_scaled": 2,
+          "projected": 300,
+          "ivc_calibrated": 3
+        }
+      },
+      "control_mre": 20.290185270337513,
+      "treatment_mre": 19.822267013711453,
+      "delta_mre": -0.46791825662606,
+      "control_param_mae": 15.739159322661326,
+      "treatment_param_mae": 16.212450769610815,
+      "delta_param_mae": 0.47329144694948866
+    },
+    {
+      "fold": 3,
+      "postprocess_counts": {
+        "control": {
+          "hc_scaled": 6,
+          "projected": 300,
+          "ivc_calibrated": 2
+        },
+        "treatment": {
+          "hc_scaled": 6,
+          "projected": 300,
+          "ivc_calibrated": 1
+        }
+      },
+      "control_mre": 19.685463231222002,
+      "treatment_mre": 20.062849498949518,
+      "delta_mre": 0.37738626772751616,
+      "control_param_mae": 17.27342140277393,
+      "treatment_param_mae": 18.491714905485093,
+      "delta_param_mae": 1.2182935027111625
+    },
+    {
+      "fold": 4,
+      "postprocess_counts": {
+        "control": {
+          "hc_scaled": 6,
+          "projected": 299,
+          "ivc_calibrated": 1
+        },
+        "treatment": {
+          "hc_scaled": 6,
+          "projected": 299,
+          "ivc_calibrated": 1
+        }
+      },
+      "control_mre": 23.88589934361769,
+      "treatment_mre": 23.996045831465395,
+      "delta_mre": 0.11014648784770387,
+      "control_param_mae": 17.919583408075965,
+      "treatment_param_mae": 18.027066556775466,
+      "delta_param_mae": 0.10748314869950093
+    }
+  ],
+  "summary": {
+    "mre": {
+      "control_mean": 22.447478326391536,
+      "treatment_mean": 22.225760409947505,
+      "paired_mean_delta": -0.22171791644403244,
+      "favorable_folds": 3,
+      "corrected_ci95": [
+        -1.1156610341624353,
+        0.6722252012743704
+      ]
+    },
+    "param_mae": {
+      "control_mean": 17.19048221193858,
+      "treatment_mean": 17.604031421063194,
+      "paired_mean_delta": 0.41354920912461496,
+      "favorable_folds": 1,
+      "corrected_ci95": [
+        -0.6998671581598592,
+        1.526965576409089
+      ]
+    }
+  },
+  "per_task_mean_delta": {
+    "A4C": {
+      "mre": 0.006483563123179437,
+      "param_mae": -0.21363183040594294
+    },
+    "AOP": {
+      "mre": -0.1232135505943063,
+      "param_mae": -0.1269009313562794
+    },
+    "FA": {
+      "mre": 0.06889597963937781,
+      "param_mae": -0.2692202370477418
+    },
+    "FUGC": {
+      "mre": -0.018056212207959277,
+      "param_mae": 0.06857694616861351
+    },
+    "HC": {
+      "mre": -0.3675961997416451,
+      "param_mae": 0.8405726028485596
+    },
+    "IVC": {
+      "mre": 0.7925476520694594,
+      "param_mae": 0.3291459154525221
+    },
+    "PLAX": {
+      "mre": -0.10820603771298601,
+      "param_mae": 0.3643905476359704
+    },
+    "PSAX": {
+      "mre": -0.828962614691757,
+      "param_mae": 3.7274664126569057
+    },
+    "fetal_femur": {
+      "mre": -1.4173538278796616,
+      "param_mae": -0.9984565438310551
+    }
+  }
+}

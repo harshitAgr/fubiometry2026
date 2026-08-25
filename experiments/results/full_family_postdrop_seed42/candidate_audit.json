@@ -1,0 +1,64 @@
+{
+  "accuracy_claimed": false,
+  "input_sha256": {
+    "base": "e671689ae76eead965ef713fc57a793c0b0159d78089f78d85a9c7ca571e5f15",
+    "hchead": "2fa56b3d5e9d643089fb8429b2c6de901a517480a55b7f985686c36b0e9246a1",
+    "hcsmall": "0e33ccec14dc6df0e95cb8dd5c132717f1152d08a7447e50a7fbb26e0d99a6be"
+  },
+  "ivc_record_values_exact": true,
+  "ivc_route": "exact_base_passthrough",
+  "max_coordinate_formula_residual": 0.0,
+  "output_sha256": "95bea5e50a807dea1642a4487f4ce7e339396b2261ae911a8101ecafca265fb0",
+  "passed": true,
+  "per_task_mean_shift_from_base_px": {
+    "A4C": 2.242690485747835,
+    "AOP": 2.439560809713657,
+    "FA": 2.294550284299598,
+    "FUGC": 1.0990664806137893,
+    "HC": 4.334735994021476,
+    "IVC": 0.0,
+    "PLAX": 1.330064009663144,
+    "PSAX": 3.5241523411963818,
+    "fetal_femur": 2.11896241984867
+  },
+  "preflight_base_prediction_sha256": "e671689ae76eead965ef713fc57a793c0b0159d78089f78d85a9c7ca571e5f15",
+  "preflight_manifest": "experiments/results/full_family_postdrop_seed42/preflight.json",
+  "preflight_manifest_sha256": "9373c438e70aa294c63c72c5745202842406413935bb7d604615a10cb742976c",
+  "realization": "pragmatic_seed42",
+  "records": 619,
+  "routes": {
+    "HC": "(base + hcsmall + hchead) / 3",
+    "IVC": "exact base passthrough",
+    "other_tasks": "(2 * base + hcsmall) / 3"
+  },
+  "selection_made": false,
+  "submission_authorized": false,
+  "symmetric_hchead_equals_base_outside_hc": null,
+  "tasks": [
+    "A4C",
+    "AOP",
+    "FA",
+    "FUGC",
+    "HC",
+    "IVC",
+    "PLAX",
+    "PSAX",
+    "fetal_femur"
+  ],
+  "training_manifests": {
+    "experiments/results/full_family_postdrop_seed42/hchead_seed42_training.json": {
+      "checkpoint_path": "runs/vitb_full_hchead_corr/best_model.pth",
+      "checkpoint_sha256": "38d2520066b1836fa092b78fc33c238f20d8119c0d0e4f7f50ac5db4defeb478",
+      "family": "hchead",
+      "manifest_sha256": "16bb3addf384835114b68abb78aaf99a4ece3937931133d40147a0c026c1774d",
+      "seed": 42
+    },
+    "experiments/results/full_family_postdrop_seed42/hcsmall_seed42_training.json": {
+      "checkpoint_path": "runs/vitb_full_hcsmall_corr/best_model.pth",
+      "checkpoint_sha256": "65781c2544ec670dcc57e289b9c349097dbf6668564eb813199ba8572f85e3d0",
+      "family": "hcsmall",
+      "manifest_sha256": "64a8d587fdebbf332bb4cf82c11f511d3331c976b0e4ad974a9bee9c976d61be",
+      "seed": 42
+    }
+  }
+}

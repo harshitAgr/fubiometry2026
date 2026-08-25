@@ -1,0 +1,25 @@
+{
+  "before": "runs/fold1_dino_vitb/best_model.pth",
+  "after": "runs/fold1_dino_vitb_hchead/best_model.pth",
+  "task": "HC",
+  "n_state_tensors": 300,
+  "n_changed_tensors": 14,
+  "changed_tensors": [
+    "heads.HC.decoder.0.weight",
+    "heads.HC.decoder.1.weight",
+    "heads.HC.decoder.1.bias",
+    "heads.HC.decoder.1.running_mean",
+    "heads.HC.decoder.1.running_var",
+    "heads.HC.decoder.1.num_batches_tracked",
+    "heads.HC.decoder.4.weight",
+    "heads.HC.decoder.5.weight",
+    "heads.HC.decoder.5.bias",
+    "heads.HC.decoder.5.running_mean",
+    "heads.HC.decoder.5.running_var",
+    "heads.HC.decoder.5.num_batches_tracked",
+    "heads.HC.decoder.8.weight",
+    "heads.HC.decoder.8.bias"
+  ],
+  "unexpected_changed_tensors": [],
+  "only_requested_head_changed": true
+}
