@@ -1,0 +1,395 @@
+{
+ "description": "Length-preserving label-geometry projection measured on the DEPLOYED pragmatic_seed42 family route, paired over the 5 CV folds.",
+ "route": {
+  "IVC": "exact base passthrough",
+  "HC": "(base + hcsmall + hchead) / 3",
+  "other": "(2 * base + hcsmall) / 3"
+ },
+ "projections": {
+  "FA": "FA subspace, length-preserving",
+  "HC": "orthogonal + concentric, length-preserving"
+ },
+ "param_mae_is_estimate": true,
+ "per_fold": [
+  {
+   "fold": 0,
+   "images": 1346,
+   "images_projected": 300,
+   "missing_members": {
+    "hcsmall": 0,
+    "hchead": 0
+   },
+   "taskmean_mre_raw": 25.86204203882265,
+   "taskmean_mre_proj": 25.738824950569168,
+   "taskmean_param_raw": 17.8146809801016,
+   "taskmean_param_proj": 17.8146809801016,
+   "per_task": {
+    "A4C": {
+     "mre_raw": 46.93481938203293,
+     "mre_proj": 46.93481938203293,
+     "param_raw": 15.498786562860909,
+     "param_proj": 15.498786562860909
+    },
+    "AOP": {
+     "mre_raw": 16.898211508248846,
+     "mre_proj": 16.898211508248846,
+     "param_raw": 13.468190669319547,
+     "param_proj": 13.468190669319547
+    },
+    "FA": {
+     "mre_raw": 15.31071465227366,
+     "mre_proj": 14.75451789137095,
+     "param_raw": 44.339414297715116,
+     "param_proj": 44.33941429771511
+    },
+    "fetal_femur": {
+     "mre_raw": 25.104012119688846,
+     "mre_proj": 25.104012119688846,
+     "param_raw": 18.983662127783997,
+     "param_proj": 18.983662127783997
+    },
+    "FUGC": {
+     "mre_raw": 5.038418627276691,
+     "mre_proj": 5.038418627276691,
+     "param_raw": 3.805074781245516,
+     "param_proj": 3.805074781245516
+    },
+    "HC": {
+     "mre_raw": 16.98803153613615,
+     "mre_proj": 16.435274502757512,
+     "param_raw": 24.51114078434432,
+     "param_proj": 24.511140784344313
+    },
+    "IVC": {
+     "mre_raw": 43.890263491188435,
+     "mre_proj": 43.890263491188435,
+     "param_raw": 9.26000311026502,
+     "param_proj": 9.26000311026502
+    },
+    "PLAX": {
+     "mre_raw": 17.829236147344727,
+     "mre_proj": 17.829236147344727,
+     "param_raw": 7.403652145036505,
+     "param_proj": 7.403652145036505
+    },
+    "PSAX": {
+     "mre_raw": 44.76467088521356,
+     "mre_proj": 44.76467088521356,
+     "param_raw": 23.06220434234347,
+     "param_proj": 23.06220434234347
+    }
+   }
+  },
+  {
+   "fold": 1,
+   "images": 1361,
+   "images_projected": 300,
+   "missing_members": {
+    "hcsmall": 0,
+    "hchead": 0
+   },
+   "taskmean_mre_raw": 23.00378732557007,
+   "taskmean_mre_proj": 22.800645066831784,
+   "taskmean_param_raw": 17.967723207343106,
+   "taskmean_param_proj": 17.967723207343106,
+   "per_task": {
+    "A4C": {
+     "mre_raw": 38.32106990837673,
+     "mre_proj": 38.32106990837673,
+     "param_raw": 18.661843264535733,
+     "param_proj": 18.661843264535733
+    },
+    "AOP": {
+     "mre_raw": 10.654771853042979,
+     "mre_proj": 10.654771853042979,
+     "param_raw": 10.412199651852307,
+     "param_proj": 10.412199651852307
+    },
+    "FA": {
+     "mre_raw": 16.04254252653074,
+     "mre_proj": 15.05145576430467,
+     "param_raw": 43.228883452742735,
+     "param_proj": 43.22888345274273
+    },
+    "fetal_femur": {
+     "mre_raw": 20.855175285942792,
+     "mre_proj": 20.855175285942792,
+     "param_raw": 16.61268194411555,
+     "param_proj": 16.61268194411555
+    },
+    "FUGC": {
+     "mre_raw": 4.973612996906182,
+     "mre_proj": 4.973612996906182,
+     "param_raw": 3.6813259744437,
+     "param_proj": 3.6813259744437
+    },
+    "HC": {
+     "mre_raw": 16.978906564534196,
+     "mre_proj": 16.141712998115707,
+     "param_raw": 22.052316594903434,
+     "param_proj": 22.05231659490343
+    },
+    "IVC": {
+     "mre_raw": 25.77206903039637,
+     "mre_proj": 25.77206903039637,
+     "param_raw": 11.101165183665756,
+     "param_proj": 11.101165183665756
+    },
+    "PLAX": {
+     "mre_raw": 25.858564182742597,
+     "mre_proj": 25.858564182742597,
+     "param_raw": 7.960666265895913,
+     "param_proj": 7.960666265895913
+    },
+    "PSAX": {
+     "mre_raw": 47.57737358165804,
+     "mre_proj": 47.57737358165804,
+     "param_raw": 27.998426533932818,
+     "param_proj": 27.998426533932818
+    }
+   }
+  },
+  {
+   "fold": 2,
+   "images": 1341,
+   "images_projected": 300,
+   "missing_members": {
+    "hcsmall": 0,
+    "hchead": 0
+   },
+   "taskmean_mre_raw": 20.456657677583454,
+   "taskmean_mre_proj": 20.31256202039981,
+   "taskmean_param_raw": 16.06516530523308,
+   "taskmean_param_proj": 16.065165305233084,
+   "per_task": {
+    "A4C": {
+     "mre_raw": 44.2415049214419,
+     "mre_proj": 44.2415049214419,
+     "param_raw": 12.95786313378433,
+     "param_proj": 12.95786313378433
+    },
+    "AOP": {
+     "mre_raw": 11.545013462753795,
+     "mre_proj": 11.545013462753795,
+     "param_raw": 11.562892664428908,
+     "param_proj": 11.562892664428908
+    },
+    "FA": {
+     "mre_raw": 16.247518953846683,
+     "mre_proj": 15.704146628297227,
+     "param_raw": 45.927923544146516,
+     "param_proj": 45.9279235441465
+    },
+    "fetal_femur": {
+     "mre_raw": 20.332324347075303,
+     "mre_proj": 20.332324347075303,
+     "param_raw": 16.356338745421787,
+     "param_proj": 16.356338745421787
+    },
+    "FUGC": {
+     "mre_raw": 5.796026631254307,
+     "mre_proj": 5.796026631254307,
+     "param_raw": 3.6921473732130754,
+     "param_proj": 3.6921473732130754
+    },
+    "HC": {
+     "mre_raw": 18.024568037882123,
+     "mre_proj": 17.27107944877877,
+     "param_raw": 18.62471934521608,
+     "param_proj": 18.6247193452161
+    },
+    "IVC": {
+     "mre_raw": 25.91136848840504,
+     "mre_proj": 25.91136848840504,
+     "param_raw": 10.489214973672407,
+     "param_proj": 10.489214973672407
+    },
+    "PLAX": {
+     "mre_raw": 15.546229088430001,
+     "mre_proj": 15.546229088430001,
+     "param_raw": 7.574656471885213,
+     "param_proj": 7.574656471885213
+    },
+    "PSAX": {
+     "mre_raw": 26.465365167161938,
+     "mre_proj": 26.465365167161938,
+     "param_raw": 17.400731495329417,
+     "param_proj": 17.400731495329417
+    }
+   }
+  },
+  {
+   "fold": 3,
+   "images": 1338,
+   "images_projected": 300,
+   "missing_members": {
+    "hcsmall": 0,
+    "hchead": 0
+   },
+   "taskmean_mre_raw": 19.905340875321215,
+   "taskmean_mre_proj": 19.780631043413578,
+   "taskmean_param_raw": 18.97657896892169,
+   "taskmean_param_proj": 18.976578968921693,
+   "per_task": {
+    "A4C": {
+     "mre_raw": 28.821839037557496,
+     "mre_proj": 28.821839037557496,
+     "param_raw": 14.612014768802323,
+     "param_proj": 14.612014768802323
+    },
+    "AOP": {
+     "mre_raw": 12.263282138798148,
+     "mre_proj": 12.263282138798148,
+     "param_raw": 10.223984489255423,
+     "param_proj": 10.223984489255423
+    },
+    "FA": {
+     "mre_raw": 17.353607387221924,
+     "mre_proj": 16.766700043752977,
+     "param_raw": 53.78185365753198,
+     "param_proj": 53.781853657532
+    },
+    "fetal_femur": {
+     "mre_raw": 14.829886312135864,
+     "mre_proj": 14.829886312135864,
+     "param_raw": 12.868906300854908,
+     "param_proj": 12.868906300854908
+    },
+    "FUGC": {
+     "mre_raw": 4.792075186210998,
+     "mre_proj": 4.792075186210998,
+     "param_raw": 3.747757424342728,
+     "param_proj": 3.747757424342728
+    },
+    "HC": {
+     "mre_raw": 16.409549261576693,
+     "mre_proj": 15.874068117876927,
+     "param_raw": 24.26114868443111,
+     "param_proj": 24.261148684431127
+    },
+    "IVC": {
+     "mre_raw": 39.44010082395139,
+     "mre_proj": 39.44010082395139,
+     "param_raw": 24.975089042280043,
+     "param_proj": 24.975089042280043
+    },
+    "PLAX": {
+     "mre_raw": 15.015767600176927,
+     "mre_proj": 15.015767600176927,
+     "param_raw": 7.193726624949868,
+     "param_proj": 7.193726624949868
+    },
+    "PSAX": {
+     "mre_raw": 30.221960130261483,
+     "mre_proj": 30.221960130261483,
+     "param_raw": 19.124729727846805,
+     "param_proj": 19.124729727846805
+    }
+   }
+  },
+  {
+   "fold": 4,
+   "images": 1341,
+   "images_projected": 299,
+   "missing_members": {
+    "hcsmall": 0,
+    "hchead": 0
+   },
+   "taskmean_mre_raw": 24.025990974883637,
+   "taskmean_mre_proj": 23.893413821253116,
+   "taskmean_param_raw": 17.553407372437977,
+   "taskmean_param_proj": 17.553407372437974,
+   "per_task": {
+    "A4C": {
+     "mre_raw": 38.85121716744471,
+     "mre_proj": 38.85121716744471,
+     "param_raw": 20.732611827596465,
+     "param_proj": 20.732611827596465
+    },
+    "AOP": {
+     "mre_raw": 17.3562585149774,
+     "mre_proj": 17.3562585149774,
+     "param_raw": 15.324099742701081,
+     "param_proj": 15.324099742701081
+    },
+    "FA": {
+     "mre_raw": 15.394069073932409,
+     "mre_proj": 14.62478747088832,
+     "param_raw": 46.16968250015577,
+     "param_proj": 46.169682500155744
+    },
+    "fetal_femur": {
+     "mre_raw": 21.000736073178736,
+     "mre_proj": 21.000736073178736,
+     "param_raw": 14.52390059424187,
+     "param_proj": 14.52390059424187
+    },
+    "FUGC": {
+     "mre_raw": 8.59560713741914,
+     "mre_proj": 8.59560713741914,
+     "param_raw": 3.4918516480729376,
+     "param_proj": 3.4918516480729376
+    },
+    "HC": {
+     "mre_raw": 17.095880362651744,
+     "mre_proj": 16.671967583021143,
+     "param_raw": 22.7172128333309,
+     "param_proj": 22.717212833330912
+    },
+    "IVC": {
+     "mre_raw": 13.25826614470074,
+     "mre_proj": 13.25826614470074,
+     "param_raw": 5.654203612846022,
+     "param_proj": 5.654203612846022
+    },
+    "PLAX": {
+     "mre_raw": 26.510769429117573,
+     "mre_proj": 26.510769429117573,
+     "param_raw": 7.588595485172255,
+     "param_proj": 7.588595485172255
+    },
+    "PSAX": {
+     "mre_raw": 58.17111487053027,
+     "mre_proj": 58.17111487053027,
+     "param_raw": 21.778508107824493,
+     "param_proj": 21.778508107824493
+    }
+   }
+  }
+ ],
+ "delta_taskmean_mre": -0.1455483979427143,
+ "delta_taskmean_mre_folds_improved": 5,
+ "delta_taskmean_mre_ci95_corrected": [
+  -0.20745315668085695,
+  -0.08364363920457163
+ ],
+ "delta_taskmean_param": 7.105427357601002e-16,
+ "delta_taskmean_param_folds_improved": 1,
+ "delta_taskmean_param_ci95_corrected": [
+  -4.824678029012365e-15,
+  6.245763500532565e-15
+ ],
+ "hc_scale_commutation_max_abs_px": 2.2737367544323206e-13,
+ "per_task_delta_mre": {
+  "A4C": 0.0,
+  "AOP": 0.0,
+  "FA": -0.6893689590382547,
+  "fetal_femur": 0.0,
+  "FUGC": 0.0,
+  "HC": -0.6205666224461688,
+  "IVC": 0.0,
+  "PLAX": 0.0,
+  "PSAX": 0.0
+ },
+ "per_task_delta_param": {
+  "A4C": 0.0,
+  "AOP": 0.0,
+  "FA": -8.526512829121202e-15,
+  "fetal_femur": 0.0,
+  "FUGC": 0.0,
+  "HC": 7.815970093361103e-15,
+  "IVC": 0.0,
+  "PLAX": 0.0,
+  "PSAX": 0.0
+ }
+}

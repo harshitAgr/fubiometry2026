@@ -1,0 +1,64 @@
+{
+  "per_task": {
+    "PLAX": {
+      "mre": 15.597630015220982,
+      "param_mae": 7.641450374880455,
+      "n_missing": 0,
+      "n_param_errors": 0
+    },
+    "PSAX": {
+      "mre": 26.495526497823676,
+      "param_mae": 17.00739620702351,
+      "n_missing": 0,
+      "n_param_errors": 0
+    },
+    "FUGC": {
+      "mre": 5.940318683357883,
+      "param_mae": 3.673396704677368,
+      "n_missing": 0,
+      "n_param_errors": 0
+    },
+    "FA": {
+      "mre": 15.795601586171223,
+      "param_mae": 47.034185960967285,
+      "n_missing": 0,
+      "n_param_errors": 0
+    },
+    "fetal_femur": {
+      "mre": 20.58700823224175,
+      "param_mae": 15.314642973976822,
+      "n_missing": 0,
+      "n_param_errors": 0
+    },
+    "A4C": {
+      "mre": 45.22510123886721,
+      "param_mae": 12.585352823831947,
+      "n_missing": 0,
+      "n_param_errors": 0
+    },
+    "HC": {
+      "mre": 18.11819050971602,
+      "param_mae": 19.356439528325904,
+      "n_missing": 0,
+      "n_param_errors": 0
+    },
+    "AOP": {
+      "mre": 11.728266288881093,
+      "param_mae": 12.043687126618114,
+      "n_missing": 0,
+      "n_param_errors": 0
+    },
+    "IVC": {
+      "mre": 25.927624813006503,
+      "param_mae": 7.079502347228178,
+      "n_missing": 0,
+      "n_param_errors": 0
+    }
+  },
+  "avg_mre": 20.60169642947626,
+  "avg_param_mae": 15.74845044972551,
+  "total_missing": 0,
+  "total_param_errors": 0,
+  "param_mae_is_estimate": true,
+  "notes": "param_mae is a raw estimate (official IQR/tolerance normalization + ChallengeR aggregation are not public); missing cases are NOT penalized in the averages \u2014 check total_missing before trusting the numbers."
+}

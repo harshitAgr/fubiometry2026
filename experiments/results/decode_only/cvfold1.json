@@ -1,0 +1,64 @@
+{
+  "per_task": {
+    "A4C": {
+      "mre": 50.25629713051471,
+      "param_mae": 28.978434758190826,
+      "n_missing": 0,
+      "n_param_errors": 0
+    },
+    "AOP": {
+      "mre": 15.397899912073377,
+      "param_mae": 15.529679859653628,
+      "n_missing": 0,
+      "n_param_errors": 0
+    },
+    "FA": {
+      "mre": 23.101509076598603,
+      "param_mae": 70.78428995049362,
+      "n_missing": 0,
+      "n_param_errors": 0
+    },
+    "FUGC": {
+      "mre": 11.85237219083164,
+      "param_mae": 10.07049192542088,
+      "n_missing": 0,
+      "n_param_errors": 0
+    },
+    "HC": {
+      "mre": 44.25286206475543,
+      "param_mae": 34.08185541007273,
+      "n_missing": 0,
+      "n_param_errors": 0
+    },
+    "IVC": {
+      "mre": 37.171179766459126,
+      "param_mae": 13.654775061994453,
+      "n_missing": 0,
+      "n_param_errors": 0
+    },
+    "PLAX": {
+      "mre": 31.308862573088316,
+      "param_mae": 13.279853892277439,
+      "n_missing": 0,
+      "n_param_errors": 0
+    },
+    "PSAX": {
+      "mre": 73.40848890462128,
+      "param_mae": 50.92288586591643,
+      "n_missing": 0,
+      "n_param_errors": 0
+    },
+    "fetal_femur": {
+      "mre": 38.51042972693607,
+      "param_mae": 27.556232709303547,
+      "n_missing": 0,
+      "n_param_errors": 0
+    }
+  },
+  "avg_mre": 36.139989038430954,
+  "avg_param_mae": 29.428722159258175,
+  "total_missing": 0,
+  "total_param_errors": 0,
+  "param_mae_is_estimate": true,
+  "notes": "param_mae is a raw estimate (official IQR/tolerance normalization + ChallengeR aggregation are not public); missing cases are NOT penalized in the averages \u2014 check total_missing before trusting the numbers."
+}

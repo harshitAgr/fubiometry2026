@@ -1,0 +1,73 @@
+{
+  "protocol": "base-only window9 plus exact Docker post-processing, OOF",
+  "official_validation_used": false,
+  "folds": [
+    {
+      "fold": 0,
+      "control_mre": 26.077526005562497,
+      "treatment_mre": 25.563271202520692,
+      "delta_mre": -0.5142548030418048,
+      "control_param_mae": 17.436447633472103,
+      "treatment_param_mae": 17.430064514496962,
+      "delta_param_mae": -0.006383118975140434
+    },
+    {
+      "fold": 1,
+      "control_mre": 23.058217188072458,
+      "treatment_mre": 22.038630235805403,
+      "delta_mre": -1.0195869522670549,
+      "control_param_mae": 17.75661676384841,
+      "treatment_param_mae": 16.967749425565422,
+      "delta_param_mae": -0.7888673382829872
+    },
+    {
+      "fold": 2,
+      "control_mre": 20.60169642947626,
+      "treatment_mre": 19.991769359325904,
+      "delta_mre": -0.6099270701503556,
+      "control_param_mae": 15.748450449725514,
+      "treatment_param_mae": 16.630649442707423,
+      "delta_param_mae": 0.882198992981909
+    },
+    {
+      "fold": 3,
+      "control_mre": 19.669558994541145,
+      "treatment_mre": 20.40432515844409,
+      "delta_mre": 0.7347661639029468,
+      "control_param_mae": 17.484788085942384,
+      "treatment_param_mae": 18.96512234176646,
+      "delta_param_mae": 1.4803342558240757
+    },
+    {
+      "fold": 4,
+      "control_mre": 24.238423514727476,
+      "treatment_mre": 24.248633550450215,
+      "delta_mre": 0.010210035722739264,
+      "control_param_mae": 18.508636058956593,
+      "treatment_param_mae": 18.080885493387527,
+      "delta_param_mae": -0.42775056556906677
+    }
+  ],
+  "summary": {
+    "mre": {
+      "control_mean": 22.729084426475968,
+      "treatment_mean": 22.44932590130926,
+      "paired_mean_delta": -0.27975852516670585,
+      "favorable_folds": 3,
+      "corrected_ci95": [
+        -1.5376977476041616,
+        0.9781806972707499
+      ]
+    },
+    "param_mae": {
+      "control_mean": 17.386987798389,
+      "treatment_mean": 17.61489424358476,
+      "paired_mean_delta": 0.22790644519575806,
+      "favorable_folds": 3,
+      "corrected_ci95": [
+        -1.5180980743686479,
+        1.9739109647601638
+      ]
+    }
+  }
+}

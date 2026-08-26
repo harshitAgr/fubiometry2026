@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+
+# Dev-only tooling. Never COPY'd, so excluding them just keeps the context honest and makes
+# it obvious that nothing outside the explicit COPY list can reach the image.
+selfcheck.sh
+selfcheck_guards.py
+verify_against_reference.py

@@ -1,0 +1,30 @@
+{
+  "date": "2026-08-03",
+  "config": "checkpoint-initialized HC-head-only refinement; geo_v1_hcsmall; 5 epochs; head LR 1e-4; encoder and other heads frozen; window-9 inference",
+  "baseline": "geo_cosine40_vitb_window9",
+  "fold_avg_mre_deltas": [-0.12875672038455832, -0.00393275988896491, -0.013408033522551932, 0.11682065032702127, -0.03880575543808362],
+  "fold_avg_param_mae_deltas": [-0.2758722695787057, 0.19319366249874292, -0.011058857008272582, -0.2485753301363225, -0.06759542874133828],
+  "mean_metrics": {
+    "avg_mre_baseline": 22.888663705957626,
+    "avg_mre_refined": 22.875047182176196,
+    "avg_mre_delta": -0.013616523781427503,
+    "avg_mre_delta_95ci": [-0.12290676134896977, 0.09567371378611478],
+    "avg_param_mae_baseline": 17.848455083514843,
+    "avg_param_mae_refined": 17.766473438921665,
+    "avg_param_mae_delta": -0.08198164459317922,
+    "avg_param_mae_delta_95ci": [-0.3194111939754779, 0.15544790478911946]
+  },
+  "hc_metrics": {
+    "mre_baseline": 17.96903059936848,
+    "mre_refined": 17.846481885335635,
+    "mre_delta": -0.12254871403284398,
+    "mre_delta_95ci": [-1.1061608521407327, 0.8610634240750447],
+    "mre_wins": 4,
+    "param_mae_baseline": 21.34199971754639,
+    "param_mae_refined": 20.604164916207786,
+    "param_mae_delta": -0.7378348013386045,
+    "param_mae_delta_95ci": [-2.8747007457792924, 1.3990311431020837],
+    "param_mae_wins": 4
+  },
+  "verdict": "TIE / NOT ADOPTED. The strict safety property holds and signs are 4/5, but the MRE effect is only -0.12 on HC (-0.014 task mean) and both paired confidence intervals cross zero. Coordinate blending did not preserve the parameter benefit."
+}

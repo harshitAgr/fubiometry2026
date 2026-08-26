@@ -1,0 +1,56 @@
+{
+  "family": "continued_dinov2_vitb_full_data",
+  "generated_utc": "2026-08-13T06:00:08.005337+00:00",
+  "members": {
+    "best_model.pth": {
+      "destination": "docker/weights/best_model.pth",
+      "destination_sha256": "264c79797d380d5472f2546f3aa5345350b704e0ee043f64601becb222c23308",
+      "previous_destination_sha256": "92abc6f5246bc05bdac4957e8f25eb5968525096dbbb9b8a1ad7179967ccade9",
+      "source": "runs/vitb_full_dino_corr/best_model.pth",
+      "source_sha256": "264c79797d380d5472f2546f3aa5345350b704e0ee043f64601becb222c23308"
+    },
+    "model_hchead.pth": {
+      "destination": "docker/weights/model_hchead.pth",
+      "destination_sha256": "2a5d43069c5d4ba9455ab6fd8c142b3dc15e1c7a5ec773ba055111f9e1a20240",
+      "previous_destination_sha256": "38d2520066b1836fa092b78fc33c238f20d8119c0d0e4f7f50ac5db4defeb478",
+      "source": "runs/vitb_full_dino_hchead_corr/best_model.pth",
+      "source_sha256": "2a5d43069c5d4ba9455ab6fd8c142b3dc15e1c7a5ec773ba055111f9e1a20240"
+    },
+    "model_hcsmall.pth": {
+      "destination": "docker/weights/model_hcsmall.pth",
+      "destination_sha256": "79c3c273b5e4f7a5d30f12dcbd39faaf8024347e4bfc630bdc0daba49109bfc2",
+      "previous_destination_sha256": "65781c2544ec670dcc57e289b9c349097dbf6668564eb813199ba8572f85e3d0",
+      "source": "runs/vitb_full_dino_hcsmall_corr/best_model.pth",
+      "source_sha256": "79c3c273b5e4f7a5d30f12dcbd39faaf8024347e4bfc630bdc0daba49109bfc2"
+    },
+    "model_s43.pth": {
+      "destination": "docker/weights/model_s43.pth",
+      "destination_sha256": "4f6b0d47b0cda0cb9d8b727456c7fae738281c2dd645fee84327e7fe9b527b6a",
+      "previous_destination_sha256": "7c90c5cfcb02baf1bcb993f80cf01938e8508847fe5e8dbf910e48a60147ba04",
+      "source": "runs/vitb_full_dino_corr_s43/best_model.pth",
+      "source_sha256": "4f6b0d47b0cda0cb9d8b727456c7fae738281c2dd645fee84327e7fe9b527b6a"
+    },
+    "model_s44.pth": {
+      "destination": "docker/weights/model_s44.pth",
+      "destination_sha256": "eb8bb9c875c05e0d437b4bfca75d2258c1ca1f60d68db5c3f7bb507cac940113",
+      "previous_destination_sha256": "93352888f331f50117c8c6b2398cdc5df459094b5f919c311ba88350f9e6f194",
+      "source": "runs/vitb_full_dino_corr_s44/best_model.pth",
+      "source_sha256": "eb8bb9c875c05e0d437b4bfca75d2258c1ca1f60d68db5c3f7bb507cac940113"
+    },
+    "model_s45.pth": {
+      "destination": "docker/weights/model_s45.pth",
+      "destination_sha256": "acefb9f648ebb0ebb045fbb8063e2f6683ba26bd8f385d3ae141068caf69a215",
+      "previous_destination_sha256": "e51032b92590038645f364c94bf627215b36fadaa27e5f10cd959c7bf9c137df",
+      "source": "runs/vitb_full_dino_corr_s45/best_model.pth",
+      "source_sha256": "acefb9f648ebb0ebb045fbb8063e2f6683ba26bd8f385d3ae141068caf69a215"
+    },
+    "model_s46.pth": {
+      "destination": "docker/weights/model_s46.pth",
+      "destination_sha256": "fe491fad70df96324d4048966be96771b0282d61fb26a02b6186d1d149b1a4cd",
+      "previous_destination_sha256": "9cea89711f32b761cb1656748bccf10796dfdb4f61b90771f9c8e45e1df1a235",
+      "source": "runs/vitb_full_dino_corr_s46/best_model.pth",
+      "source_sha256": "fe491fad70df96324d4048966be96771b0282d61fb26a02b6186d1d149b1a4cd"
+    }
+  },
+  "passed": true
+}

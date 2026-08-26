@@ -1,0 +1,107 @@
+{
+  "protocol_version": 1,
+  "status": "preregistered_hedge_not_adopted",
+  "data": {
+    "folds_csv": "data/folds/folds.csv",
+    "expected_rows": 6743,
+    "expected_train_rows": 6727,
+    "expected_guard_drop_rows": 16,
+    "allowed_train_folds": [0, 1, 2, 3, 4],
+    "external_train_rows": 0,
+    "train_task_counts": {
+      "A4C": 108,
+      "AOP": 3984,
+      "FA": 500,
+      "FUGC": 260,
+      "HC": 999,
+      "IVC": 38,
+      "PLAX": 87,
+      "PSAX": 49,
+      "fetal_femur": 702
+    }
+  },
+  "base_seed_paths": {
+    "42": "runs/vitb_full_corr/best_model.pth",
+    "43": "runs/vitb_full_corr_s43/best_model.pth",
+    "44": "runs/vitb_full_corr_s44/best_model.pth",
+    "45": "runs/vitb_full_corr_s45/best_model.pth",
+    "46": "runs/vitb_full_corr_s46/best_model.pth"
+  },
+  "hcsmall_training": {
+    "initialization": "fresh_dinov2_vitb",
+    "epochs": 40,
+    "augmentation": "geo_v1_hcsmall",
+    "warmup_epochs": 3,
+    "schedule": "cosine",
+    "encoder": "dinov2_vitb",
+    "input_size": 518,
+    "heatmap_size": 64,
+    "sigma": 1.8,
+    "optimizer": "AdamW",
+    "encoder_lr": 0.00002,
+    "head_lr": 0.001,
+    "weight_decay": 0.01,
+    "batch_size": 4,
+    "num_workers": 4,
+    "sampler": "task_uniform_task_pure_batches",
+    "normalization": "ImageNet mean/std from experiments/augment.py",
+    "loss": "sigmoid_heatmap_MSE",
+    "external_data": false,
+    "per_task_heatmap_overrides": {},
+    "seeds": [42, 43, 44, 45, 46]
+  },
+  "hchead_refinement": {
+    "initialization": "corresponding_base_seed_checkpoint_never_hcsmall",
+    "task": "HC",
+    "epochs": 5,
+    "augmentation": "geo_v1_hcsmall",
+    "head_lr": 0.0001,
+    "optimizer": "AdamW",
+    "weight_decay": 0.01,
+    "batch_size": 4,
+    "num_workers": 4,
+    "encoder_frozen": true,
+    "non_hc_heads_frozen": true,
+    "schedule": "constant",
+    "expected_changed_tensors": 14,
+    "seeds": [42, 43, 44, 45, 46]
+  },
+  "inference": {
+    "method": "soft",
+    "tta": "scale",
+    "scales": [0.92, 1.0, 1.08],
+    "decode_window": 9,
+    "decoder": "experiments/decode.py soft windowed centroid",
+    "family_aggregation": "heatmap_mean_within_family_then_coordinate_mean_across_families",
+    "ivc_route": "copy_base_family_record_exactly",
+    "other_tasks": "equal_coordinate_mean_base_hcsmall_hchead"
+  },
+  "realizations": {
+    "pragmatic_seed42": {
+      "base_family_seeds": [42, 43, 44, 45, 46],
+      "hcsmall_family_seeds": [42],
+      "hchead_family_seeds": [42],
+      "non_hc_non_ivc_formula": "(2 * base_five_seed + hcsmall_seed42) / 3",
+      "hc_formula": "(base_five_seed + hcsmall_seed42 + hchead_seed42) / 3",
+      "interpretation": "asymmetric pragmatic extrapolation; candidate artifact only"
+    },
+    "symmetric_five_seed": {
+      "base_family_seeds": [42, 43, 44, 45, 46],
+      "hcsmall_family_seeds": [42, 43, 44, 45, 46],
+      "hchead_family_seeds": [42, 43, 44, 45, 46],
+      "non_ivc_formula": "equal coordinate mean of the three five-seed family predictions",
+      "interpretation": "faithful family-level production realization"
+    }
+  },
+  "evidence": {
+    "cached_cv_report": "experiments/results/geo_cosine40_vitb_uniform3_ensemble/paired_summary.json",
+    "mre_delta": -0.3033191722357785,
+    "favorable_mre_folds": 4,
+    "mre_corrected_ci95": [-0.6579445422682201, 0.05130619779666312],
+    "parameter_mae_delta": -0.19788161666017318,
+    "favorable_parameter_folds": 4,
+    "parameter_corrected_ci95": [-0.7217521707954517, 0.3259889374751053],
+    "warning": "Small selected-on-CV hedge; corrected intervals cross zero. Full-data training adds no accuracy evidence."
+  },
+  "submission_policy": "never_zip_or_submit_without_explicit_user_approval"
+}

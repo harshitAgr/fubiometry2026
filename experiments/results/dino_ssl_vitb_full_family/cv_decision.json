@@ -1,0 +1,65 @@
+{
+  "protocol": "continued_dino_vitb_paired_5fold_deployment_gate_v2",
+  "baseline": "geo_cosine40_vitb post-femur-drop re-score",
+  "control_mean_mre": 22.999796021319963,
+  "treatment_mean_mre": 22.694231664159783,
+  "folds": [
+    {
+      "fold": 0,
+      "control_mre": 26.35588393128665,
+      "treatment_mre": 25.832301056495673,
+      "delta": -0.5235828747909785
+    },
+    {
+      "fold": 1,
+      "control_mre": 23.429406107975822,
+      "treatment_mre": 22.187843780479053,
+      "delta": -1.2415623274967693
+    },
+    {
+      "fold": 2,
+      "control_mre": 20.809191383553944,
+      "treatment_mre": 20.278756186372153,
+      "delta": -0.5304351971817916
+    },
+    {
+      "fold": 3,
+      "control_mre": 19.90307111063055,
+      "treatment_mre": 20.691475889448178,
+      "delta": 0.7884047788176289
+    },
+    {
+      "fold": 4,
+      "control_mre": 24.501427573152846,
+      "treatment_mre": 24.48078140800386,
+      "delta": -0.020646165148985318
+    }
+  ],
+  "per_task_mean_delta": {
+    "A4C": -0.08440401515642862,
+    "AOP": -0.1640945919750358,
+    "FA": -0.1414434326254348,
+    "FUGC": -0.0329047046446254,
+    "HC": -0.16055217763743315,
+    "IVC": 0.6306599107964314,
+    "PLAX": -0.18678662461831727,
+    "PSAX": -0.885319361129531,
+    "fetal_femur": -1.7252342174512272
+  },
+  "policy": "expected_score",
+  "deploy": true,
+  "strict_deploy": false,
+  "checks": {
+    "treatment_below_23": true,
+    "at_least_4_of_5_folds_improved": true,
+    "corrected_ci_upper_below_zero": false
+  },
+  "paired_delta_mean": -0.30556435716017916,
+  "paired_delta_corrected_ci95": [
+    -1.7030998718674173,
+    1.091971157547059
+  ],
+  "improved_folds": 4,
+  "decision_basis": "The expected-score policy selects the lower five-fold mean when at least four folds improve; it does not claim that the corrected confidence interval excludes zero.",
+  "caveat": "Control weights trained before the invalid femur frames were dropped, so part of the observed gain may be due to the corrected supervised training pool."
+}

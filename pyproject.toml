@@ -1,0 +1,18 @@
+[project]
+name = "fu-biometry-challenge"
+version = "0.1.0"
+description = "MICCAI 2026 FU_Biometry (Codabench 15590) — local scorer + baseline pipeline"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.1",
+    "scipy>=1.11",
+    "pillow>=10.0",
+    "gdown>=5.1",
+]
+
+[dependency-groups]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

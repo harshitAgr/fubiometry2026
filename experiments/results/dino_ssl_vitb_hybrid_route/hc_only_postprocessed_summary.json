@@ -1,0 +1,73 @@
+{
+  "protocol": "HC-only family route, exact Docker post-processing; continued-DINO base replacement OOF",
+  "official_validation_used": false,
+  "folds": [
+    {
+      "fold": 0,
+      "control_mre": 25.90655749120795,
+      "treatment_mre": 25.461537098403667,
+      "delta_mre": -0.4450203928042811,
+      "control_param_mae": 17.855908774300172,
+      "treatment_param_mae": 18.3158957710208,
+      "delta_param_mae": 0.4599869967206267
+    },
+    {
+      "fold": 1,
+      "control_mre": 22.98030692513585,
+      "treatment_mre": 21.881226318341987,
+      "delta_mre": -1.099080606793862,
+      "control_param_mae": 17.87762040310373,
+      "treatment_param_mae": 17.420491924338734,
+      "delta_param_mae": -0.4571284787649965
+    },
+    {
+      "fold": 2,
+      "control_mre": 20.507774384966183,
+      "treatment_mre": 19.935595993036777,
+      "delta_mre": -0.5721783919294054,
+      "control_param_mae": 15.689434759313464,
+      "treatment_param_mae": 16.52469850632947,
+      "delta_param_mae": 0.8352637470160076
+    },
+    {
+      "fold": 3,
+      "control_mre": 19.662616363507173,
+      "treatment_mre": 20.321201404245368,
+      "delta_mre": 0.6585850407381955,
+      "control_param_mae": 17.507149918974882,
+      "treatment_param_mae": 19.025672122813656,
+      "delta_param_mae": 1.5185222038387742
+    },
+    {
+      "fold": 4,
+      "control_mre": 24.1060428934712,
+      "treatment_mre": 24.16383070939823,
+      "delta_mre": 0.05778781592702842,
+      "control_param_mae": 18.5999329729533,
+      "treatment_param_mae": 18.316803153160407,
+      "delta_param_mae": -0.28312981979289376
+    }
+  ],
+  "summary": {
+    "mre": {
+      "control_mean": 22.63265961165767,
+      "treatment_mean": 22.352678304685206,
+      "paired_mean_delta": -0.2799813069724649,
+      "favorable_folds": 3,
+      "corrected_ci95": [
+        -1.521909876303014,
+        0.9619472623580841
+      ]
+    },
+    "param_mae": {
+      "control_mean": 17.506009365729106,
+      "treatment_mean": 17.920712295532613,
+      "paired_mean_delta": 0.41470292980350365,
+      "favorable_folds": 2,
+      "corrected_ci95": [
+        -1.0996562443217115,
+        1.9290621039287188
+      ]
+    }
+  }
+}
